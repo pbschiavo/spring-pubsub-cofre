@@ -1,0 +1,21 @@
+spring:
+  pubsub:
+    projectId: project-id
+    topicId: topic
+    subscriptionId: subscription
+
+# swagger-ui custom path
+springdoc:
+  api-docs:
+    path: /api-docs
+
+# Configurações gerais do Actuator
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
